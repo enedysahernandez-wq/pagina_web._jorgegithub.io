@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Jorge Armando Echeverría Niebles</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Mi Página Personal</h1>
+        <p class="subtitulo">Jorge Armando Echeverría Niebles - 22 años</p>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="bio-contenedor">
+                <img src="foto.jpg" alt="Foto de Jorge Armando Echeverría Niebles" class="foto-perfil" />
+                <p>
+                    Mi nombre es <strong>Jorge Armando Echeverría Niebles</strong>, tengo 22 años y estudio 
+                    <strong>Gestión de Sistemas Electromecánicos</strong>. Me considero una persona responsable 
+                    y comprometida con mi formación profesional y con mi trabajo. En mi tiempo libre disfruto 
+                    salir a comer, jugar fútbol, leer libros y ver películas y series.
+                </p>
+            </div>
+        </section>
+        <section id="redes">
+            <h2>Redes sociales</h2>
+            <p>Puedes encontrarme en:</p>
+            <ul class="lista-redes">
+                <li><a href="https://www.facebook.com/share/1HC9nfzEmz/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
+            </ul>
+        </section>
+
+        <section id="listas">
+            <h2>Mis hobbies y responsabilidades</h2>
+
+            <div class="listas-flex">
+                <div>
+                    <h3>Pasatiempos</h3>
+                    <ul>
+                        <li>Salir a comer</li>
+                        <li>Jugar fútbol</li>
+                        <li>Leer libros</li>
+                        <li>Ver películas y series</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Responsabilidades</h3>
+                    <ol>
+                        <li>Cumplir con mis responsabilidades en casa</li>
+                        <li>Organizar mi cuarto</li>
+                        <li>Echarle comida y cuidar a mi perro</li>
+                        <li>Realizar todas las actividades de mi carrera</li>
+                        <li>Cumplir con mis responsabilidades en el trabajo</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="horario">
+            <h2>Horario semanal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora / Día</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 - 10:00</td>
+                        <td>Clases</td>
+                        <td>Clases</td>
+                        <td>Clases</td>
+                        <td>Clases</td>
+                        <td>Clases</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 12:00</td>
+                        <td>Estudio</td>
+                        <td>Laboratorio</td>
+                        <td>Proyecto</td>
+                        <td>Estudio</td>
+                        <td>Trabajo</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 16:00</td>
+                        <td>Trabajo</td>
+                        <td>Trabajo</td>
+                        <td>Estudio</td>
+                        <td>Trabajo</td>
+                        <td>Fútbol / Tiempo libre</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <p>Si deseas comunicarte conmigo, completa el siguiente formulario:</p>
+
+            <form id="form-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required />
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="mensaje-estado" class="mensaje-estado"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
